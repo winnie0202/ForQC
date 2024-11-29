@@ -1,0 +1,12 @@
+{
+   "name": "basic-calculator",
+   "version": "1.0.0",
+   "description": "A basic calculator with a bug for demonstration purposes.",
+   "main": "calculator.js",
+   "scripts": {
+     "start": "node calculator.js"
+   },
+   "author": "Student",
+   "license": "MIT"
+ }
+ 
