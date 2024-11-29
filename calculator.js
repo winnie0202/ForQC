@@ -40,8 +40,13 @@ rl.on("line", (input) => {
             result = num1 * num2;
             break;
         case "/":
-            result = num1 / num2; // BUG: Division by zero is not handled
-            break;
+	    if (num2 === 0) {
+	        console.log("Error: Division by zero is not allowed.");
+	        return;
+	    }
+	    result = num1 / num2;
+    	break;
+
         default:
             console.log("Invalid operator. Use +, -, *, or /.");
             return;
